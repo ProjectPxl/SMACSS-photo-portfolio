@@ -1,0 +1,21 @@
+.hero
+{
+  background-image: url('http://i.imgur.com/LWROkp2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 500px;
+
+  margin-bottom:50px;
+
+  .hero--text{
+    width: 50%;
+    margin: 0 auto;
+    color:white;
+    text-align: center;
+    padding-top: 380px;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../Base/mixins.scss";
+
+.grid{
+  margin: 0 auto;
+  width:90%;
+  overflow: auto;
+}
+
+.col-2-3 {@include grid(9, 10px);}
+.col-1-3 {@include grid(3, 10px);}
+.colPosts{@include grid(4, 0);
+    width: 29%;
+    margin: 20px 0 20px 3%;
+    float: left;
+    font-size: 1.1em;
+
+  
+    .colPosts__frame{
+    -moz-box-shadow:    1px 1px 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow:         1px 1px 1px 1px #ccc;
+  }
+  
+  .colPosts__footerText{
+    color:white; 
+    text-align:center;
+    
+    >ul li, >img{
+      padding: 10px 10px 0 0;
+    }
+  }
+
+  .colPosts:last-of-type{margin:0;}
+
+  p{
+      @include typography(black, 'Noto Sans', 1em,0,1.15em,400,normal, center);
+      padding: 10px 10px 10px 10px;
+     }
+}

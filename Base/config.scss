@@ -1,0 +1,43 @@
+$darkGrey : #333333;
+
+body{
+  font-family: "Noto Sans", Arial;
+}
+
+%container{  
+  width: 80%;
+  margin: 0 auto;
+}
+
+.items{@extend %container;}
+
+.footer{
+   background: lighten($darkGrey, 10%);
+  margin-top: 50px;
+  padding: 20px;
+
+  h1{
+@include typography(white, 'Noto Sans', 1.6em,0,1em, 700, uppercase, center);}
+.col-2-3 h3{@include typography(#333333, 'Noto Sans', 1.4em,0,1em, bold, uppercase, left);
+}
+
+h3{
+@include typography(#333333, 'Noto Sans', 1.4em,0,1em, bold, uppercase, center);
+}
+
+p{
+  padding-top: 15px;
+  line-height: 1.7em;
+}
+
+a{
+  text-decoration: none;
+  color: lighten($darkGrey, 10%);
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}

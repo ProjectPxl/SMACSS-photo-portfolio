@@ -1,0 +1,30 @@
+@mixin typography
+($fColor: black, $fFamily: "Noto Sans", $fSize: 1em, $fSpacing: .03em, $fLineHeight: 1em, $fWeight: normal, $fTransform: lowercase, $fAlign: left)
+{
+  color: $fColor;
+  font-family: $fFamily;
+  font-size: $fSize;
+  letter-spacing:$fSpacing;
+  line-height: $fLineHeight;
+  font-weight: $fWeight;
+  text-transform: $fTransform;
+  text-align: $fAlign;
+}
+
+@mixin grid($col, $padding)
+{
+  width: (100%/12)*$col;
+  float:left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: $padding;
+  
+ .clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  }
+}
